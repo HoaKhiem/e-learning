@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gia sư online</title>
+    <link rel="icon" href="../../public/img/logo.png" type = "image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/img/logo.png" />
+    <!-- Bootstrap4 - CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- Main - CSS  -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./img/faviconnn.ico" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    {{>header}}
+    <!-- BANNER -->
+    <div class="pp hide" data-toggle="modal" data-target="#crepost" >
+        <img src="./img/plus.png" alt="" data-toggle="tooltip" title="Tạo bài viết">
+    </div>
+    <section class="banner">
+        <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#bannerCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#bannerCarousel" data-slide-to="1"></li>
+                <li data-target="#bannerCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 img-fluid" src="./img/ban1.jpg" alt="First slide">
+                    <div class=" container carousel-caption d-md-block">
+                        <h1>Tìm kiếm gia sư trực tuyến.</h1>
+                        <p>Bạn đang cần tìm một gia sư chất lượng để cải thiện việc học của con bạn?</p>
+                        <button class="btn">Đăng kí ngay <i class="fa fa-angle-double-right"></i></button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 img-fluid" src="./img/ban2.jpg" alt="First slide">
+                    <div class="container carousel-caption  d-md-block">
+                        <h1>Trở thành gia sư nhanh chóng.</h1>
+                        <p>Bạn là một giáo viên hoặc là sinh viên muốn trở thành một gia sư để kiếm thêm thu nhập?</p>
+                        <button class="btn">Đăng kí ngay <i class="fa fa-angle-double-right"></i></button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 img-fluid" src="./img/ban3.jpg" alt="First slide">
+                    <div class="container carousel-caption  d-md-block">
+                        <h1>Mang lại sự tiện lợi.</h1>
+                        <p>Áp dụng các công nghệ 4.0 vào trong việc học giúp việc học trở nên thuận tiện, nhanh chóng về
+                            thời gian nhưng vẫn đảm bảo chất lượng </p>
+                        <button class="btn">Đăng kí ngay <i class="fa fa-angle-double-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#bannerCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- POST  -->
+    <section class="section post">
+        <div class="heading">
+            <h2>NEWS POST</h2>
+            <p>Tìm kiếm giáo viên ngay </p>
+        </div>
+
+        <section class="search">
+            <div class="container">
+                <div class="search-box">
+                    <div class="search-icon"><i class="fa fa-search search-icon"></i></div>
+                    <form action="" class="search-form">
+                        <input type="text" placeholder="Search" id="search" autocomplete="off">
+                    </form>
+                    <svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px"
+                        viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;" xml:space="preserve">
+                        <path class="border" d="M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280" />
+                        <path class="border" d="M335.5,108.5h280c29.3,0,53-23.7,53-53v0c0-29.3-23.7-53-53-53h-280" />
+                    </svg>
+                    <div class="go-icon"><i class="fa fa-arrow-right"></i></div>
+                </div>
+            </div>
+        </section>
+        <div class="container-fluid gedf-wrapper">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card post__left">
+                        <div class="card-body">
+                            <div class="h5">Trình độ</div>
+                            <ul>
+                                <a href="">
+                                    <li>Lớp 6</li>
+                                </a><a href="">
+                                    <li>Lớp 7</li>
+                                </a><a href="">
+                                    <li>Lớp 8</li>
+                                </a><a href="">
+                                    <li>Lớp 9</li>
+                                </a><a href="">
+                                    <li>Lớp 10</li>
+                                </a><a href="">
+                                    <li>Lớp 11</li>
+                                </a><a href="">
+                                    <li>Lớp 12</li>
+                                </a>
+                            </ul>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="h5">Môn học</div>
+                            <ul>
+                                <a href="">
+                                    <li>Toán</li>
+                                </a>
+                                <a href="">
+                                    <li>Lý</li>
+                                </a>
+                                <a href="">
+                                    <li>Hóa</li>
+                                </a>
+                                <a href="">
+                                    <li>Sinh</li>
+                                </a>
+                                <a href="">
+                                    <li>Sử</li>
+                                </a>
+                                <a href="">
+                                    <li>Địa</li>
+                                </a>
+                                <a href="">
+                                    <li>Ngữ Văn</li>
+                                </a>
+                                <a href="">
+                                    <li>Ngoại ngữ</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <ul class="col-md-6 gedf-main post__list">
+                    <!-- Post /////-->
+                    <!--- \\\\\\\Post-->
+                    <li class="card gedf-card pst">
+                        <div class="card-header">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="mr-2">
+                                        <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
+                                    </div>
+                                    <div class="ml-2">
+                                        <div class="h5">Nguyễn Văn Hậu</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="dropdown">
+                                        <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-h"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+                                            <div class="h6 dropdown-header">Configuration</div>
+                                            <a class="dropdown-item" href="#">Save</a>
+                                            <a class="dropdown-item" href="#">Hide</a>
+                                            <a class="dropdown-item" href="#">Report</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-body">
+                            <a class="card-link" href="#">
+                                <h5 class="card-title">Tìm gia sư dạy toán</h5>
+                            </a>
+                            <p class="card-text">
+                                Mình có con đang học lớp 7, bé khá thông minh và học nhanh hiểu nhưung dịch quá không đi
+                                học thêm được
+                                nên mình muốn tìm một gia sư online cho con ạ
+                            </p>
+                            <div>
+                                <span class="btn post__subject text-white">Toán</span>
+                                <span class="btn btn-warning text-white">Lớp 6</span>
+                                <span class="btn btn-danger text-white">200.000/b</span>
+                                <span class="btn"> <i class="fa fa-map-marker-alt"></i> Hoà Bình</span>
+
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="#" class="card-link"><i class="fa fa-comment"></i>Bình luận</a>
+                            <a href="#" class="card-link"><i class="fa fa-mail-forward"></i>Ứng tuyển</a>
+                        </div>
+                    </li>
+                    <!-- Post /////-->
+                    <div class="post__button">
+                        <button>Xem Thêm >></button>
+                    </div>
+                    <!-- Post /////-->
+                </ul>
+                <div class="col-md-3">
+                    <div class="card gedf-card">
+                        <div class="card-header text-center">TOP GIÁO VIÊN</div>
+                        <div class="card-body text-center">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a data-toggle="tooltip" title="xem thông tin" href="/profile">Nguyễn Thái Cường</a><div class="tb">điểm trung bình: <span data-toggle="tooltip" title="được đánh giá mỗi cuối kì" class="point">9.3</span></div><div class="comment">Lượt đánh giá: <span class="cmt">40</span></div></li>
+                                <li class="list-group-item"><a data-toggle="tooltip" title="xem thông tin" href="/profile">Ngô Thị Mai Loan</a><div class="tb">điểm trung bình: <span data-toggle="tooltip" title="được đánh giá mỗi cuối kì" class="point">9.0</span></div><div class="comment">Lượt đánh giá: <span class="cmt">45</span></div></li>
+                                <li class="list-group-item"><a data-toggle="tooltip" title="xem thông tin" href="/profile">Lê Văn Thuận</a><div class="tb">điểm trung bình: <span data-toggle="tooltip" title="được đánh giá mỗi cuối kì" class="point">8.9</span></div><div class="comment">Lượt đánh giá: <span class="cmt">30</span></div></li>
+                                <li class="list-group-item"><a data-toggle="tooltip" title="xem thông tin" href="/profile">Lương Thị Thảo Hiểu</a><div class="tb">điểm trung bình: <span data-toggle="tooltip" title="được đánh giá mỗi cuối kì" class="point">8.8</span></div><div class="comment">Lượt đánh giá: <span class="cmt">35</span></div></li>
+                                <li class="list-group-item"><a data-toggle="tooltip" title="xem thông tin" href="/profile">Đinh Minh Nguyệt</a><div class="tb">điểm trung bình: <span data-toggle="tooltip" title="được đánh giá mỗi cuối kì" class="point">8.7</span></div><div class="comment">Lượt đánh giá: <span class="cmt">32</span></div></li>
+                                <li class="list-group-item"><a data-toggle="tooltip" title="xem thông tin" href="/profile">Bùi Duy Linh</a><div class="tb">điểm trung bình: <span data-toggle="tooltip" title="được đánh giá mỗi cuối kì" class="point">8.7</span></div><div class="comment">Lượt đánh giá: <span class="cmt">37</span></div></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- OUR STATS  -->
+    <section class="ourStats section">
+        <div class="heading heading--white">
+            <h2>Thành Tựu</h2>
+            <p>Thành tựu đã đạt được </p>
+        </div>
+        <div class="ourStats__content container">
+            <div class="row">
+                <div class="col-6 col-lg-3">
+                    <div class="ourStats__item">
+                        <i class="fa fa-graduation-cap"></i>
+                        <h3>Học sinhh tốt nghiệp</h3>
+                        <P><span class="counter">500</span></P>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="ourStats__item">
+                        <i class="fa fa-user"></i>
+                        <h3>Trao chứng chỉ</h3>
+                        <P><span class="counter">500</span></P>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="ourStats__item">
+                        <i class="fa fa-users"></i>
+                        <h3>Học sinh</h3>
+                        <P><span class="counter">700</span></P>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="ourStats__item">
+                        <i class="fa fa-trophy"></i>
+                        <h3>Awards</h3>
+                        <P><span class="counter">700</span></P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFFER -->
+    <section class="offer section">
+        <div class="heading">
+            <h2>DỊCH VỤ CỦA CHÚNG TÔI</h2>
+            <p>Chúng tôi đem đến dịch vụ gia sư chất lượng hàng đầu Việt Nam</p>
+        </div>
+        <div class="offer__content container">
+            <div class="row">
+                <div class="col-12 col-lg-4 offer__col">
+                    <div class="offer__item">
+                        <i class="fa fa-graduation-cap"></i>
+                        <h3>Kết nối gia sư trực tuyến</h3>
+                        <p>Kết nối với những gia sư hàng đầu cả nước cực nhanh chóng chỉ với một click chuột</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 offer__col">
+                    <div class="offer__item">
+                        <i class="fa fa-book"></i>
+                        <h3>Luyện thi</h3>
+                        <p>Luyện thi tất cả các môn học với những giáo viên hàng đầu, luôn đảm bảo chất lượng đầu ra</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 offer__col">
+                    <div class="offer__item">
+                        <i class="fa fa-align-left"></i>
+                        <h3>Tổ chức thi trực tuyến</h3>
+                        <p>Thường xuyên tổ chức các cuộc thi trực tuyến với nhiều giải thưởng hấp dẫn, khích lệ tinh
+                            thần học tập</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 offer__col">
+                    <div class="offer__item">
+                        <i class="far fa-comment"></i>
+                        <h3>Học trực tuyến</h3>
+                        <p>Học trực tuyến 1:1 với gia sư online, đầy đủ kiến thức và đảm bảo an toàn trong thời kì dịch
+                            bệnh</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 offer__col">
+                    <div class="offer__item">
+                        <i class="far fa-bookmark"></i>
+                        <h3>Tuyển gia sư</h3>
+                        <p>Cơ hội việc làm tại nhà cho các bạn sinh viên và những nhà giáo có nhiều thời gian rảnh rỗi
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 offer__col">
+                    <div class="offer__item">
+                        <i class="fa fa-globe-asia"></i>
+                        <h3>Luyện ielts </h3>
+                        <p>Luyện thi IELTS với những giáo viên có kinh nghiệm lâu năm, đảm bảo về chất lượng đầu ra</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEEDBACK  -->
+    <section class="feedback section">
+        <div class="heading heading--white">
+            <h2>FEEDBACK</h2>
+            <p>Những đánh giá về dịch vụ </p>
+        </div>
+        <div class="container">
+            <div class="feedback__content">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="feedback__top">
+                            <p>Ý tưởng của trang web rất hay, cho con học ở đây rất an tâm cả về chất lượng và đảm bảo an toàn trong mùa dịch</p>
+                        </div>
+                        <div class="feedback__bottom">
+                            <img src="./img/test1.jpg" alt="test1">
+                            <div class="feedback__name">
+                                <p>chien86</p>
+                                <p>Tran Van Chien</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="feedback__top">
+                            <p>Trang web hội tụ rất nhiều giáo viên giỏi và đặc biệt là rất nhiệt tình, tôi rất yên tâm khi cho con học ở đây</p>
+                        </div>
+                        <div class="feedback__bottom">
+                            <img src="./img/test2.jpg" alt="test2">
+                            <div class="feedback__name">
+                                <p>xhuanhieu</p>
+                                <p>Leu Xuan Hieu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="feedback__top">
+                            <p>Từ khi cho con học ở đây, tôi không cần lo nghĩ gì về việc đảm bảo an toàn cho con khi không còn phải ra ngoài, đặc biệt là thành tích của con tiến bộ khá đáng kể</p>
+                        </div>
+                        <div class="feedback__bottom">
+                            <img src="./img/test3.jpg" alt="test3">
+                            <div class="feedback__name">
+                                <p>thanhlt</p>
+                                <p>Nguyen Van Thanh</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="feedback__top">
+                            <p>Các thầy cô dạy rất tốt và nhiệt tình, bên cạnh đó trang web cũng có nhiều sự kiện thú vị cho học sinh</p>
+                        </div>
+                        <div class="feedback__bottom">
+                            <img src="./img/test1.jpg" alt="test1">
+                            <div class="feedback__name">
+                                <p>an1234</p>
+                                <p>Tran Xuan An</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="feedback__top">
+                            <p>Từ khi cho con học ở đây thì thành tích học tập của cháu đã cải thiện hơn rất nhiều, mọi người nên cho con học ở đây nha</p>
+                        </div>
+                        <div class="feedback__bottom">
+                            <img src="./img/test2.jpg" alt="test2">
+                            <div class="feedback__name">
+                                <p>giangbe</p>
+                                <p>Trinh Thi Giang</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS  -->
+    <section class="news section">
+        <div class="heading">
+            <h2>NEWS & EVENTS</h2>
+            <p>Tin tức và sự kiện </p>
+        </div>
+        <div class="news__content container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-5">
+                    <img class="img-fluid" src="./img/giasu.png" alt="g7.jpg">
+                </div>
+                <div class="col-12 col-md-6 col-lg-7 mt-3 mt-md-0">
+                    <h3><a href="" data-toggle="modal" data-target="#newsModal">Tuyển chọn gia sư</a></h3>
+                    <h4>21/09/2021</h4>
+                    <p>
+                        Như vậy là năm học mới cũng đã đến, mùa gia sư cũng đã cận kề, để đáp ứng được nhu cầu học gia
+                        sư rất lớn sắp tới của học sinh,
+                        E-Learning quyết định mở chương trình tuyển gia sư với mục tiêu dạy học từ lớp 1 đến lớp 10. Đối
+                        tượng ứng tuyển có thể là các bạn
+                        sinh viên sư phạm, các thầy cô có thời gian rảnh nhiều. vậy còn đợi gì nữa mà không đăng ký để
+                        cải thiện thu nhập nào!!.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-7">
+                    <h3><a href="">Tổ chức kỳ thi online với giải thưởng hấp dẫn</a></h3>
+                    <h4>31/02/2022</h4>
+                    <p>Bắt đầu từ tháng 10/2021, nhằm tạo tính cạnh tranh để khích lệ tinh thần ham học của học sinh,
+                        E-Learning sẽ thường xuyên tổ chức các cuộc thi về các bộ môn giữa những học sinh trên hệ thống
+                        với nhiều giải thưởng
+                        cực kì hấp dẫn, Những học sinh đạt được thành tích cao sẽ không những có được những giải thưởng
+                        hấp dẫn mà còn được vinh danh trên hệ thống
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-5">
+                    <img class="img-fluid" src="./img/g10.jpg" alt="g10.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    {{>footer}}
+    <!-- Modal -->
+    <div class="modal fade" id="newsModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tuyển chọn gia sư</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" src="./img/giasu.png" alt="g12.jpg">
+                    <p>
+                        Proin euismod vehicula vestibulum. Fusce ullamcorper aliquet dolor id egestas. Nulla leo purus,
+                        facilisis non cursus ut, egestas sed ipsum.Fusce ullamcorper aliquet dolor id egestas. Nulla leo
+                        purus, facilisis non cursus ut, egestas sed ipsum.Fusce ullamcorper aliquet dolor id egestas.
+                        Nulla leo purus, facilisis non cursus ut, egestas sed ipsum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="crepost" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tạo bài viết</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" action="/post">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Tiêu đề</label>
+                            <input name="title" type="text" class="form-control" id="exampleFormControlInput1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Nội dung</label>
+                            <div class="form-group">
+                                <textarea name="content" class="form-control" id="exampleFormControlTextarea1" rows="5" required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select name="grade" class="form-control">
+                                <option value="Lớp 6">Lớp 6</option>
+                                <option value="Lớp 7">Lớp 7</option>
+                                <option value="Lớp 8">Lớp 8</option>
+                                <option value="Lớp 9">Lớp 9</option>
+                                <option value="Lớp 10">Lớp 10</option>
+                                <option value="Lớp 11">Lớp 11</option>
+                                <option value="Lớp 12">Lớp 12</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="subject" class="form-control">
+                                <option value="Toán">Toán</option>
+                                <option value="Vật lý">Vật Lý</option>
+                                <option value="Hoá Học">Hoá Học</option>
+                                <option value="Sinh Học">Sinh Học</option>
+                                <option value="Ngữ Văn">Ngữ Văn</option>
+                                <option value="Lịch Sử">Lịch Sử</option>
+                                <option value="Địa lý">Địa Lý</option>
+                                <option value="Ngoại ngữ">Ngoại Ngữ</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="location" class="form-control">
+                                <option value="Hà Nội">Hà Nội</option>
+                                <option value="Hải Phòng">Hải Phòng</option>
+                                <option value="Hoà Bình">Hoà Bình</option>
+                                <option value="Đà Nẵng">Đà Nẵng</option>
+                                <option value="Nghệ An">Nghệ An</option>
+                                <option value="Huế">Huế</option>
+                                <option value="TPHCM">TPHCM</option>
+                                <option value="Bình Dương">Bình Dương</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Lương/buổi</span>
+                                </div>
+                                <input required name="salary" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                                </div>
+                        </div>
+                        <div class="form-group text-center">
+                            <input class="mg-auto pt-2 pb-2 pl-4 pr-4 btn-primary rounded" type="submit" value="Đăng">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Library -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <!-- Jquery Waypoint -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <!-- CountUp JS -->
+    <script src="./js/jquery.countup.js"></script>
+    <script>
+        $(".num").countUp();
+    </script>
+    <!-- Bootstrap 4 - JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+
+    <!-- Main js -->
+    <script src="./js/main.js"></script>
+
+    <!-- Count Up  JS  -->
+    <script src="./js/jquery.countup.js"></script>
+    <script>
+        $('.counter').countUp({
+            'time': 1500,
+            'delay': 10
+        });
+    </script>
+
+    <!-- Owl carousel -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+        });
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                576: {
+                    items: 2
+                },
+                1200: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+</body>
+<script src="./js/app.js"></script>
+</html>

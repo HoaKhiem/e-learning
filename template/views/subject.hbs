@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gia sư online</title>
+
+    <!-- Bootstrap4 - CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- Main - CSS  -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/class.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/faviconnn.ico" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    {{>header}}
+    <!-- MAIN  -->
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxl-c-plus-plus icon'></i>
+            <div class="logo_name">Menu</div>
+            <i class="fa fa-bars" id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="/class">
+                    <i class="fa fa-th-large"></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="/profile">
+                    <i class="fa fa-user"></i>
+                    <span class="links_name">Profile</span>
+                </a>
+                <span class="tooltip">Profile</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-facebook-messenger"></i>
+                    <span class="links_name">Messages</span>
+                </a>
+                <span class="tooltip">Messages</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-sign-out-alt"></i>
+                    <span class="links_name">Log out</span>
+                </a>
+                <span class="tooltip">Log out</span>
+            </li>
+
+        </ul>
+    </div>
+    <section class="home-section">
+        <section class="search">
+            <div class="container">
+                <div class="search-box">
+                    <div class="search-icon"><i class="fa fa-search search-icon"></i></div>
+                    <form action="" class="search-form">
+                        <input type="text" placeholder="Search" id="search" autocomplete="off">
+                    </form>
+                    <svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px"
+                        viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;" xml:space="preserve">
+                        <path class="border" d="M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280" />
+                        <path class="border" d="M335.5,108.5h280c29.3,0,53-23.7,53-53v0c0-29.3-23.7-53-53-53h-280" />
+                    </svg>
+                    <div class="go-icon"><i class="fa fa-arrow-right"></i></div>
+                </div>
+
+            </div>
+            <div class="space"></div>
+        </section>
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12">
+                <div class="white-box">
+                    <div class="d-md-flex mb-3">
+                        <h3 class="box-title mb-0">Thông tin lớp + tên  lớp</h3>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table no-wrap">
+                            <thead>
+                                <tr>
+                                    <th class="border-top-0">Buổi học</th>
+                                    <th class="border-top-0">Tên giáo viên</th>
+                                    <th class="border-top-0">Thời gian học</th>
+                                    <th class="border-top-0">Giờ vào lớp</th>
+                                    <th class="border-top-0">Link lớp học</th>
+                                    <th class="border-top-0">Bài tập</th>
+                                    <th class="border-top-0">Điểm</th>                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mr.A</td>
+                                    <td class="txt-oflo">1/1/2021</td>
+                                    <td class="txt-oflo"><span class="text-danger">20:00</span>  <span class="text-warning"><i class="fa fa-arrow-right"></i></span><span class="text-danger"> 22:00</span> </td>
+                                    <td class="text-success"><a href="https://meet.google.com/mjo-mvft-xmb?pli=1&authuser=1">Vào lớp</a></td>
+                                    <td class="txt-oflo"><a class="subject-class" href="" data-toggle="modal"
+                                            data-target="#subject-class">English</a></td>
+                                
+                                    <td><span class="text-success">100 <span class="text-mute">/ 100</span></span></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mr.A</td>
+                                    <td class="txt-oflo">1/1/2021</td>
+                                    <td class="txt-oflo"><span class="text-danger">20:00</span>  <span class="text-warning"><i class="fa fa-arrow-right"></i></span><span class="text-danger"> 22:00</span> </td>
+                                    <td class="text-success"><a href="https://meet.google.com/mjo-mvft-xmb?pli=1&authuser=1">Vào lớp</a></td>
+                                    <td class="txt-oflo"><a class="subject-class" href="" data-toggle="modal"
+                                            data-target="#subject-class">English</a></td>
+                                
+                                    <td><span class="text-primary">80 <span class="text-mute">/ 100</span></span></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mr.A</td>
+                                    <td class="txt-oflo">1/1/2021</td>
+                                    <td class="txt-oflo"><span class="text-danger">20:00</span>  <span class="text-warning"><i class="fa fa-arrow-right"></i></span><span class="text-danger"> 22:00</span> </td>
+                                    <td class="text-success"><a href="https://meet.google.com/mjo-mvft-xmb?pli=1&authuser=1">Vào lớp</a></td>
+                                    <td class="txt-oflo"><a class="subject-class" href="" data-toggle="modal"
+                                            data-target="#subject-class">English</a></td>
+                                
+                                    <td><span class="text-warning">50 <span class="text-mute">/ 100</span></span></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mr.A</td>
+                                    <td class="txt-oflo">1/1/2021</td>
+                                    <td class="txt-oflo"><span class="text-danger">20:00</span>  <span class="text-warning"><i class="fa fa-arrow-right"></i></span><span class="text-danger"> 22:00</span> </td>
+                                    <td class="text-success"><a href="https://meet.google.com/mjo-mvft-xmb?pli=1&authuser=1">Vào lớp</a></td>
+                                    <td class="txt-oflo"><a class="subject-class" href="" data-toggle="modal"
+                                            data-target="#subject-class">English</a></td>
+                                
+                                    <td><span class="text-danger">40 <span class="text-mute">/ 100</span></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+    </section>
+    <!-- FOOTER -->
+    {{>footer}}
+    <!-- Modal -->
+    <div class="modal fade" id="subject-class" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="">
+                <div class="row justify-content-between">
+                    <h5 class="modal-title text-white">English</h5>
+                    <button style="color:white" type="button " class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="row">
+                    <div class="col-8"><embed src="data-test/ASM2_BHAF190013.pdf" width="800px" height="2100px" /></div>
+                    <div class="col-4">bài tập</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Library -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+    </script>
+
+    <!-- Jquery Waypoint -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js">
+    </script>
+
+    <!-- CountUp JS -->
+    <script src="./js/jquery.countup.js"></script>
+    <script>
+        $(".num").countUp();
+    </script>
+    <!-- Bootstrap 4 - JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="./js/main.js"></script>
+    <!-- Count Up  JS  -->
+    <script src="./js/jquery.countup.js"></script>
+    <script>
+        $('.counter').countUp({
+            'time': 1500,
+            'delay': 10
+        });
+    </script>
+
+
+    <!-- Owl carousel -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                576: {
+                    items: 2
+                },
+                1200: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
