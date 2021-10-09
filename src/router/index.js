@@ -4,7 +4,7 @@ const Post = require('../model/post');
 router.get('',(req,res) => {
     res.status(200).render('index');
 })
-router.get('/',(req,res) => {
+router.get('/home',(req,res) => {
     res.status(200).render('index');
 })
 router.post('/search',async (req,res) => {
