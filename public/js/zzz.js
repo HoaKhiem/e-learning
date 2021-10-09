@@ -13,4 +13,4 @@
             student.classList.remove('hide');
             teacher.classList.add('hide');
         })
-    </script>
+</script>
