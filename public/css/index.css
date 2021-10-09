@@ -9,10 +9,19 @@
     margin: 0;
     position: relative;
   }
+  .cx{
+    cursor: pointer;
+  }
   .dropdown-menu-xl {
     min-width: 420px;
     border-radius: .4375rem;
     background: #fff !important;
+}
+.ic{
+  cursor: pointer;
+}
+.ic :hover{
+  text-decoration: underline;
 }
 .point{
   background-color: rgb(216, 17, 166);

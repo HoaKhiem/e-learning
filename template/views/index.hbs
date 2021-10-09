@@ -94,8 +94,8 @@
             <div class="container">
                 <div class="search-box">
                     <div class="search-icon"><i class="fa fa-search search-icon"></i></div>
-                    <form action="" class="search-form">
-                        <input type="text" placeholder="Search" id="search" autocomplete="off">
+                    <form class="search-form scc">
+                        <input class="xcc" name="search" type="text" placeholder="Nhập tên môn" id="search" autocomplete="off">
                     </form>
                     <svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -107,6 +107,9 @@
                     <div class="go-icon"><i class="fa fa-arrow-right"></i></div>
                 </div>
             </div>
+            <div class="col-md-12 text-center">
+                <p class="text-danger">{{name}}</p>
+            </div>
         </section>
         <div class="container-fluid gedf-wrapper">
             <div class="row">
@@ -115,19 +118,19 @@
                         <div class="card-body">
                             <div class="h5">Trình độ</div>
                             <ul>
-                                <a href="">
+                                <a class="cx">
                                     <li>Lớp 6</li>
-                                </a><a href="">
+                                </a><a class="cx">
                                     <li>Lớp 7</li>
-                                </a><a href="">
+                                </a><a class="cx">
                                     <li>Lớp 8</li>
-                                </a><a href="">
+                                </a><a class="cx">
                                     <li>Lớp 9</li>
-                                </a><a href="">
+                                </a><a class="cx">
                                     <li>Lớp 10</li>
-                                </a><a href="">
+                                </a><a class="cx">
                                     <li>Lớp 11</li>
-                                </a><a href="">
+                                </a><a class="cx">
                                     <li>Lớp 12</li>
                                 </a>
                             </ul>
@@ -136,28 +139,28 @@
                         <div class="card-body">
                             <div class="h5">Môn học</div>
                             <ul>
-                                <a href="">
+                                <a class="cx">
                                     <li>Toán</li>
                                 </a>
-                                <a href="">
+                                <a class="cx">
                                     <li>Lý</li>
                                 </a>
-                                <a href="">
+                                <a class="cx">
                                     <li>Hóa</li>
                                 </a>
-                                <a href="">
+                                <a class="cx">
                                     <li>Sinh</li>
                                 </a>
-                                <a href="">
+                                <a class="cx">
                                     <li>Sử</li>
                                 </a>
-                                <a href="">
+                                <a class="cx">
                                     <li>Địa</li>
                                 </a>
-                                <a href="">
+                                <a class="cx">
                                     <li>Ngữ Văn</li>
                                 </a>
-                                <a href="">
+                                <a class="cx">
                                     <li>Ngoại ngữ</li>
                                 </a>
                             </ul>
@@ -229,12 +232,12 @@
                         <div class="card-header text-center">TOP GIÁO VIÊN</div>
                         <div class="card-body text-center">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><a data-toggle="tooltip" title="xem thông tin" href="/profile">Nguyễn Thái Cường</a><div class="tb">điểm trung bình: <span data-toggle="tooltip" title="được đánh giá mỗi cuối kì" class="point">9.3</span></div><div class="comment">Lượt đánh giá: <span class="cmt">40</span></div></li>
-                                <li class="list-group-item"><a data-toggle="tooltip" title="xem thông tin" href="/profile">Ngô Thị Mai Loan</a><div class="tb">điểm trung bình: <span data-toggle="tooltip" title="được đánh giá mỗi cuối kì" class="point">9.0</span></div><div class="comment">Lượt đánh giá: <span class="cmt">45</span></div></li>
-                                <li class="list-group-item"><a data-toggle="tooltip" title="xem thông tin" href="/profile">Lê Văn Thuận</a><div class="tb">điểm trung bình: <span data-toggle="tooltip" title="được đánh giá mỗi cuối kì" class="point">8.9</span></div><div class="comment">Lượt đánh giá: <span class="cmt">30</span></div></li>
-                                <li class="list-group-item"><a data-toggle="tooltip" title="xem thông tin" href="/profile">Lương Thị Thảo Hiểu</a><div class="tb">điểm trung bình: <span data-toggle="tooltip" title="được đánh giá mỗi cuối kì" class="point">8.8</span></div><div class="comment">Lượt đánh giá: <span class="cmt">35</span></div></li>
-                                <li class="list-group-item"><a data-toggle="tooltip" title="xem thông tin" href="/profile">Đinh Minh Nguyệt</a><div class="tb">điểm trung bình: <span data-toggle="tooltip" title="được đánh giá mỗi cuối kì" class="point">8.7</span></div><div class="comment">Lượt đánh giá: <span class="cmt">32</span></div></li>
-                                <li class="list-group-item"><a data-toggle="tooltip" title="xem thông tin" href="/profile">Bùi Duy Linh</a><div class="tb">điểm trung bình: <span data-toggle="tooltip" title="được đánh giá mỗi cuối kì" class="point">8.7</span></div><div class="comment">Lượt đánh giá: <span class="cmt">37</span></div></li>
+                                <li class="list-group-item ic"><a data-toggle="tooltip" title="xem thông tin">Nguyễn Thái Cường</a><div class="tb">Điểm đánh giá: <span data-toggle="tooltip" title="được đánh giá mỗi cuối kì" class="point">9.3</span></div><div class="comment">Lượt đánh giá: <span class="cmt">40</span></div></li>
+                                <li class="list-group-item ic"><a data-toggle="tooltip" title="xem thông tin">Ngô Thị Mai Loan</a><div class="tb">Điểm đánh giá: <span data-toggle="tooltip" title="được đánh giá mỗi cuối kì" class="point">9.0</span></div><div class="comment">Lượt đánh giá: <span class="cmt">45</span></div></li>
+                                <li class="list-group-item ic"><a data-toggle="tooltip" title="xem thông tin">Lê Văn Thuận</a><div class="tb">Điểm đánh giá: <span data-toggle="tooltip" title="được đánh giá mỗi cuối kì" class="point">8.9</span></div><div class="comment">Lượt đánh giá: <span class="cmt">30</span></div></li>
+                                <li class="list-group-item ic"><a data-toggle="tooltip" title="xem thông tin">Lương Thị Thảo Hiểu</a><div class="tb">Điểm đánh giá: <span data-toggle="tooltip" title="được đánh giá mỗi cuối kì" class="point">8.8</span></div><div class="comment">Lượt đánh giá: <span class="cmt">35</span></div></li>
+                                <li class="list-group-item ic"><a data-toggle="tooltip" title="xem thông tin">Đinh Minh Nguyệt</a><div class="tb">Điểm đánh giá: <span data-toggle="tooltip" title="được đánh giá mỗi cuối kì" class="point">8.7</span></div><div class="comment">Lượt đánh giá: <span class="cmt">32</span></div></li>
+                                <li class="list-group-item ic"><a data-toggle="tooltip" title="xem thông tin">Bùi Duy Linh</a><div class="tb">Điểm đánh giá: <span data-toggle="tooltip" title="được đánh giá mỗi cuối kì" class="point">8.7</span></div><div class="comment">Lượt đánh giá: <span class="cmt">37</span></div></li>
                             </ul>
                         </div>
                     </div>
@@ -455,6 +458,9 @@
     </section>
     <!-- FOOTER -->
     {{>footer}}
+    <div class="hi hide">
+        {{post}}
+    </div>
     <!-- Modal -->
     <div class="modal fade" id="newsModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
@@ -607,4 +613,8 @@
     </script>
 </body>
 <script src="./js/app.js"></script>
+<script>
+    const x = "<%post%>"
+    console.log(x);
+</script>
 </html>

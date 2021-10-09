@@ -24,4 +24,8 @@ router.post('/studentregister', async (req,res) => {
         });
     }
 })
+
+router.post('/register/teacher',(req,res) => {
+    res.send(req.body);
+})
 module.exports = router

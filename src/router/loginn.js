@@ -22,6 +22,7 @@ router.use(sessions({
     resave:false
 }))
 let x = -1;
+let n = '';
 router.post('/loginn', async (req,res) => {
     
     try{
@@ -35,6 +36,7 @@ router.post('/loginn', async (req,res) => {
             if(await bcrypt.compare(req.body.your_pass, user[0].password)){
                 req.session.user = user[0].userName;
                 x = user[0].role;
+                n = user[0].userName;
                 if(x == 0){
                     req.session.user = user[0].userName;
                     res.redirect('/admin');
@@ -56,6 +58,6 @@ router.post('/loginn', async (req,res) => {
     }
 })
 router.get('/ss',(req,res) => {
-    res.send({'id':x});
+    res.send({'id':x, 'n':n});
 })
 module.exports = router

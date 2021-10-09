@@ -22,4 +22,13 @@ router.get('/api/postlist',async (req,res) => {
     res.send(post_list);
 })
 
+
+router.post('/search', async (req,res) => {
+    res.send(req.body);
+})
+
+router.get('/post/delete',async (req,res) => {
+    await Post.findByIdAndDelete({_id:req.query.id});
+    res.redirect('/');
+})
 module.exports = router

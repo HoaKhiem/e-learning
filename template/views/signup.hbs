@@ -57,7 +57,7 @@
                         </form>
 
                         <!-- teacher register -->
-                        <form action="/register/student" method="POST" class="register-form teacher-regis tc hide"
+                        <form action="/register/teacher" method="POST" class="register-form teacher-regis tc hide"
                             id="register-form tc">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
@@ -75,6 +75,10 @@
                                 <label for="exp"><i class="zmdi zmdi-lock-outline"></i></label>
                                 <input type="number" name="exp" id="exp" placeholder="Kinh nghiệm dạy học (năm)" required/>
                             </div>
+                            {{!-- <div class="form-group">
+                                <label for="exp"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="text" name="phone" id="exp" placeholder="Số điện thoại" required/>
+                            </div> --}}
                             <div class="form-group">
                                 <label for="work"><i class="zmdi zmdi-lock-outline"></i></label>
                                 <input type="text" name="work" id="work" placeholder="Đơn vị công tác " required/>
