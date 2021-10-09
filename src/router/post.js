@@ -13,7 +13,7 @@ router.post('/post', async(req,res) => {
         const post = new Post(req.body);
         await post.save();
         alert("Đăng bài thành công");
-        res.redirect('/');
+        res.redirect('/home');
     }
 })
 router.get('/api/postlist',async (req,res) => {
@@ -29,6 +29,6 @@ router.post('/search', async (req,res) => {
 
 router.get('/post/delete',async (req,res) => {
     await Post.findByIdAndDelete({_id:req.query.id});
-    res.redirect('/');
+    res.redirect('/home');
 })
 module.exports = router

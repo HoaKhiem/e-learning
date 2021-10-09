@@ -5,7 +5,7 @@ router.get('/logout', (req,res) => {
     if(req.session.user){
         req.session.destroy();
         aletr("Đã đăng xuất")
-        res.redirect('/');
+        res.redirect('/home');
     }else{
         res.render('signin',{
             name: 'Hãy đăng nhập trước'
