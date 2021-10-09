@@ -55,6 +55,10 @@ app.get('/admin/*',(req,res) => {
     res.render('dashboard');
 })
 //----------------------------------------------Run app in host-------------------------------------
-app.listen(port, () => {
-    console.log(chalk.white.bold.bgGreen("App started at port "+port));
-})
+// app.listen(port, () => {
+//     console.log(chalk.white.bold.bgGreen("App started at port "+port));
+// })
+
+app.listen(process.env.PORT || 3000, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  });
