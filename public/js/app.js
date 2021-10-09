@@ -22,7 +22,7 @@ for(let i of ic){
 let post_list = '';
 let role ={};
 fetch('/ss').then(function(res) {return res.json()}).then(function(da){localStorage.setItem('i',da.id); localStorage.setItem('n',da.n)})
-const post_data_all = fetch('http://localhost:3200/api/postlist').then(response => response.json()).then((data) => {
+const post_data_all = fetch('/api/postlist').then(response => response.json()).then((data) => {
     data.map((d) =>  post_list += `
                     <li class="card gedf-card pst">
                         <div class="card-header">
